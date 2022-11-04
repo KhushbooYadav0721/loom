@@ -1,0 +1,141 @@
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    color:#636363;
+    font-family: 'Conv_Lato-Medium_0';
+    font-size: 40px;
+}
+h6{
+    color: #333;
+
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    color:#636363;
+    letter-spacing: 3px;
+}
+ul{
+    list-style-type: none;
+    
+}
+.button{    
+    text-align: center;
+    background-color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px;
+    font-size: medium;
+    letter-spacing: 2px;
+    
+}
+.card{
+    position: relative;
+    margin-top: 15px;
+}
+.card-footer{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.29);
+    bottom: 5px;
+    width: 100%;
+    left: 0;
+    padding: 5px;
+
+}
+h4 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-size: medium;
+
+}
+.card-text{
+    color: white;
+    font-size: small;
+}
+div > p{
+    color: #636363;
+    font-size: 20px;
+}
+ .last{
+    color:  #636363;
+    font-size: small;
+}
+h6{
+    color: #353535;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+/*-- datails css--*/
+
+.first{
+    color: #636363;
+    text-transform: uppercase;
+    font-size: small;
+    
+    
+}
+.first:hover{
+    color: orange;
+}
+select{
+    border: 1px solid gray;
+    color: gray;
+    padding: 2px;
+    background-color: white;
+    font-size: small;
+}
+.marry{
+    color: #999;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-family: 'Conv_Lato-Regular_0';
+    font-weight: normal;
+    margin-left: 38px;
+}
+h5{
+    color: #353535;
+    text-transform: uppercase;
+    font-size: medium;
+    margin-left: 38px;
+    border-bottom: 1px solid #353535;
+}
+
+.kk{
+    border-bottom: 1px solid gray;
+    padding: 7px;
+    color: #636363;
+}
+
+/*-- product 2 css--*/
+
+h1{
+    color: #4D4D4D;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+}
+
+.three{
+    color: #4D4D4D;
+    text-transform: capitalize;
+}
+
+.side-heading{
+    color: #4D4D4D;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+ h4 + p{
+    color: #636363;
+    font-size: small;
+    text-transform: capitalize;
+}
