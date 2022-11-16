@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .first{
     text-transform: uppercase;
     background-color:  #092c42;
