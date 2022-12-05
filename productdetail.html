@@ -57,7 +57,24 @@
             position: relative;
         }
 
-        
+        .column {
+          float: left;
+          width: 25%;
+          padding: 10px;
+        }
+
+
+        .column img {
+          opacity: 0.8; 
+          cursor: pointer; 
+        }
+
+        .column img:hover {
+          opacity: 1;
+        }
+
+ 
+      
         
 
 
@@ -73,30 +90,32 @@
     
         <div class="container">
             <div class="row">
-                <div class="col-lg-1 col-md-1 col-sm-2 col-4"> 
-                    
-                    <img src="static/img/web-design-top-banner.jpg" class="img-thumbnail" onclick="myFunction(this);" >
-                    
-                    <img src="static/img/mixjam_fssai.jpg" class="img-thumbnail" onclick="myFunction(this);">
-                   
-                    <img src="static/img/mixjam_2.jpg" class="img-thumbnail" onclick="myFunction(this);">
-                    
+                <div class="col-lg-5 col-md-5 col-sm-5  "> 
+                  <div class="card float-left" >
+                    <img src="static/img/web-design-top-banner.jpg" class="img-fluid" id="expandedImg" width="100%">
+                  </div> 
+
+                  <div class="column">
+                    <img src="static/img/web-design-top-banner.jpg" class="img-thumbnail " onclick="myFunction(this);" >
+                  </div>
+                  <div class="column">
+                    <img src="static/img/mixjam_fssai.jpg" class="img-thumbnail " onclick="myFunction(this);">
+                  </div>
+                  <div class="column"> 
+                    <img src="static/img/mixjam_2.jpg" class="img-thumbnail " onclick="myFunction(this);">
+                  </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-12">
-                    <div class="card">
-                        <img src="static/img/web-design-top-banner.jpg" class="img-fluid" id="expandedImg" width="100%">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                
+                <div class="col-lg-7 col-md-7 col-sm-7 col-12">
                     <div class="container">
-                        <div>
+                        <div class="product-name">
                             <h1 class="text-dark font-weight-bold">Mixed fruit jam 
                               <button class="float-right border-0" title="wishlist">
                                 <i class="material-icons icon float-right" style="color: orangered;">favorite</i></button></h1>
                             <p class="text-capitalize"><b>jam&jelly</b>  
                                 <button class="float-right border-0" title="share"><i class="material-icons text-success">send</i></button> </p>
                         </div>
-                        <div>
+                        <div class="product-price">
                            <form>
                                <div class="form-inline">
                                     <select class="form-control pr-5" id="weight-price" name="sell" style="border-color: green;">
@@ -170,6 +189,7 @@
             </div>
         </div>
    </div> 
+   
 
    <!--for the product img-->
    <script>
