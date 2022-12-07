@@ -66,7 +66,7 @@
 
         .column img {
           opacity: 0.8; 
-          cursor: pointer; 
+         object-fit: cover;
         }
 
         .column img:hover {
@@ -89,8 +89,10 @@
         .zoom-img img:hover {
           transform: scale(1.2);
           
-        }
+        } 
 
+      /* for img zoom */
+         
         .slideshow-items {
           width: 500px;
         }
@@ -100,7 +102,8 @@
         }
 
         #slideshow-items-container { 
-          display: inline-block; position: relative; 
+          display: inline-block; 
+          position: relative; 
         }
 
         #lens { 
@@ -108,7 +111,9 @@
           }
 
        #lens, #result {
-         position: absolute; display: none; z-index: 1; 
+         position: absolute;
+         display: none; 
+         z-index: 1; 
         }
 
         .slideshow-items { 
@@ -130,6 +135,13 @@
         #lens, .slideshow-items, .slideshow-thumbnails, #result { 
           border: solid var(--light-grey-2) 1px; 
         }
+
+        #quantity{
+          position: absolute;
+          z-index: -1;
+          top: 360px;
+          left: 300px;
+        } 
 
 
        
@@ -209,9 +221,10 @@
                             <span class="fa fa-star"></span>
                         </div>
                         <div>
-                            <button type="button" class="btn text-white btn-block mb-2" 
-                            style="background-color:darkgreen;" title="add to bag"><i class="material-icons icon">shopping_cart</i> <b>Add</b></button>
-
+                          <input type="number" id="quantity" value="1" min="1" max="25" class="text-center">
+                          <button type="button" class="btn text-white btn-block mb-2 btn-success" id="btn1" title="add to bag">
+                              <i class="material-icons icon">shopping_cart</i><b>Add</b>
+                          </button>
                         </div>
                         <div>
                          <span class="ml-3">sold by <a href="#">freshokit</a></span>
@@ -329,6 +342,17 @@
          $('.slideshow-thumbnails').removeClass('active');
         $('.slideshow-thumbnails').eq( elm.index() ).addClass('active');
         }
+
+
+        //for the btn---
+
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("#btn1").addClass("btn btn-warning");
+            $("#btn1").width(200); 
+            $("#quantity").css("z-index","1")
+          });
+        });
 
 
 
